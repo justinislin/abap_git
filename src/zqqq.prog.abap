@@ -23,3 +23,5 @@ DATA(components) = CAST cl_abap_structdescr( cl_abap_typedescr=>describe_by_name
 data(lt_tab) = value stringtab( for wa in CAST cl_abap_structdescr( cl_abap_typedescr=>describe_by_name( 'T100' ) )->components ( conv string( wa-name ) ) ).
 
 break-point.
+
+write: / 'add new'.
